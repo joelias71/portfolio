@@ -1,4 +1,5 @@
 import Home from './components/home'
+import Portfolio from './components/portfolio'
 
 export default class App extends React.Component {
 
@@ -10,6 +11,7 @@ export default class App extends React.Component {
         return (
             <div>
                 <Home />
+                <Portfolio />
             </div>
         )
     }

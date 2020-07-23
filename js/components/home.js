@@ -1,3 +1,5 @@
+import Nav from './nav'
+
 export default class Home extends React.Component {
 
     constructor(props) {
@@ -6,7 +8,8 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <section className="home">
+            <section id="home" className="home">
+                <Nav />
                 <div className="container">
                     <div className="css-typing">
                         <p>Welcome</p>

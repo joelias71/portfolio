@@ -8,10 +8,11 @@
     --color-blue: #3498DB;
     --color-green: #48C9B0;
     --color-white: #fff;
-    --color-gray: #e4e4e4;
+    --color-gray: #818181;
     --color-black: #333;
     --color-dark-gray:#888888;
     --color-yellow: #FFC552;
+    --color-yellow-light: #ffed4b;
   }
 
 h1, h2, h3, h4, h5 {
@@ -23,7 +24,9 @@ h1, h2, h3, h4, h5 {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: var(--color-yellow);
+    background: linear-gradient(110deg, var(--color-yellow) 60%, var(--color-yellow-light) 60%);
+    /*background-color: var(--color-yellow);*/
+    padding-top: 2rem;
 }
 
 .home .container {
@@ -35,6 +38,7 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
+/**Text writer animation**/
 .css-typing p {
     border-right: .15em solid var(--color-black);
     white-space: nowrap;
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5 {
 }
 .css-typing p:nth-child(1) {
     width: 6em;
-    font-size: 2em;
+    font-size: 2.5em;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
@@ -51,7 +55,7 @@ h1, h2, h3, h4, h5 {
   
 .css-typing p:nth-child(2) {
     width: 8em;
-    font-size: 2.5em;
+    font-size: 3em;
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
@@ -63,6 +67,7 @@ h1, h2, h3, h4, h5 {
   
 .css-typing p:nth-child(3) {
     width: 15em;
+    font-size: 1.5em;
     opacity: 0;
     -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
     animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
@@ -160,5 +165,93 @@ h1, h2, h3, h4, h5 {
 @-webkit-keyframes blink {
     50% {
       border-color: tranparent;
+    }
+}
+
+/**SideBar**/
+#menu {
+    position: relative;
+    font-size:30px;
+    cursor:pointer;
+    margin-left: 2.5rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-gray);
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: var(--color-white);
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.portfolio {
+    display: block;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    background-color: var(--color-white);
+    /*border: 1px solid var(--color-gray);*/
+}
+
+@media (max-width: 824px) {
+    .card {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+@media (min-width: 825px) and (max-width: 949px) {
+    .card {
+        flex: 0 1 calc(49.5% - 20px);
+    }
+}
+
+@media (min-width: 950px) {
+    .card {
+        flex: 0 1 calc(33% - 20px);
     }
 }

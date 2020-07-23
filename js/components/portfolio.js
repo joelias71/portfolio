@@ -1,3 +1,5 @@
+import Card from './card'
+
 export default class Portfolio extends React.Component {
 
     constructor(props) {
@@ -6,8 +8,15 @@ export default class Portfolio extends React.Component {
 
     render() {
         return (
-            <section>
-                
+            <section id="portfolio" className="portfolio">
+                <div className="content">
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
             </section>
         )
     }
