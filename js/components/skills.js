@@ -41,6 +41,7 @@ export default class Skills extends React.Component {
                         <li>Docker</li>
                         <li>Jest</li>
                         <li>Gradle | Maven</li>
+                        <li>GraphQL</li>
                     </ul>
                 </div>
             </div>

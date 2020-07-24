@@ -10,7 +10,7 @@ export default class Home extends React.Component {
                     <div className="css-typing">
                         <p>Welcome</p>
                         <p>I'm Jorge Elias</p>
-                        <p>I´m a fullstack software engineer</p>
+                        <p>Fullstack software engineer</p>
                     </div>
                 </div>
             </section>

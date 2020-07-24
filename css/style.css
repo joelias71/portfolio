@@ -12,7 +12,8 @@
     --color-gray: #818181;
     --color-sky-blue: #89ABE3FF;
     /*--color-black: #333;*/
-    --color-black: #000000FF;
+    /*--color-black: #000000FF;*/
+    --color-black: #2A2B2DFF;
     --color-dark-gray:#888888;
     --color-yellow: #FFC552;
     --color-yellow-light: #ffed4b;
@@ -74,8 +75,8 @@ h1, h2, h3, h4, h5 {
     width: 15em;
     font-size: 1.5em;
     opacity: 0;
-    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation: type3 1s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 1s steps(20, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
@@ -175,23 +176,24 @@ h1, h2, h3, h4, h5 {
 
 /**SideBar**/
 #menu {
-    position: relative;
-    font-size:30px;
-    cursor:pointer;
-    margin-left: 2.5rem;
+  position: relative;
+  font-size:30px;
+  cursor:pointer;
+  margin-left: 2.5rem;
+  color: var(--color-black);
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--color-black);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
   
 .sidenav a {
