@@ -2,10 +2,6 @@ import Nav from './nav'
 
 export default class Home extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <section id="home" className="home">
