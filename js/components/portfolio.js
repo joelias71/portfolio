@@ -13,9 +13,6 @@ export default class Portfolio extends React.Component {
                     <Card />
                     <Card />
                     <Card />
-                    <Card />
-                    <Card />
-                    <Card />
                 </div>
             </section>
         )
