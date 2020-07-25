@@ -7,6 +7,9 @@
 :root {
     --color-blue: #3498DB;
     --color-green: #48C9B0;
+    --color-tanager-turquoise: #95DBE5FF;
+    --color-teal-blue: #078282FF;
+    --color-kelly-green: #339E66FF;
     /*--color-white: #fff;*/
     --color-white: #FCF6F5FF;
     --color-gray: #818181;
@@ -17,8 +20,13 @@
     --color-dark-gray:#888888;
     --color-yellow: #FFC552;
     --color-yellow-light: #ffed4b;
-    --primary-color: var(--color-sky-blue);
-    --secondary-color: var(--color-white);
+    --color-yellow-btn: #ffe593;
+    --color-red: #F65058FF;
+    --color-yellow2: #FBDE44FF;
+    --color-navy: #28334AFF;
+    --primary-color: var(--color-red);
+    --secondary-color: var(--color-yellow2);
+    --third-color: var(--color-navy);
   }
 
 h1, h2, h3, h4, h5 {
@@ -81,6 +89,20 @@ h1, h2, h3, h4, h5 {
     animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 800px) {
+  .css-typing p:nth-child(1) {
+    font-size: 2em;
+  }
+  
+  .css-typing p:nth-child(2) {
+    font-size: 2em;
+  }
+  
+  .css-typing p:nth-child(3) {
+    font-size: 1em;
+  }
 }
   
 @keyframes type {
@@ -180,7 +202,7 @@ h1, h2, h3, h4, h5 {
   font-size:30px;
   cursor:pointer;
   margin-left: 2.5rem;
-  color: var(--color-black);
+  color: var(--third-color);
 }
 
 .sidenav {
@@ -190,7 +212,7 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--color-black);
+  background-color: var(--third-color);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -269,6 +291,7 @@ ul{
     display: block;
     width: 100%;
     background-color: var(--color-white);
+    padding-bottom: 2rem;
 }
 
 .content {
@@ -303,4 +326,106 @@ ul{
     .card {
         flex: 0 1 calc(33% - 20px);
     }
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact {
+  background-color: var(--primary-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+p {
+  margin: 1rem;
+  font-size: 1em;
+}
+
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px var(--secondary-color);
+  color: var(--secondary-color);
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: var(--third-color);
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: var(--third-color);
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.btn:focus {
+  outline: 2px dotted var(--primary-color);
+}
+
+.icons {
+  margin-top: 2.5rem;
+}
+.icons a {
+  font-size: 2em;
+  margin: 0.5rem;
+  color: var(--secondary-color)
+}
+.icons a:hover {
+  color: var(--third-color)
 }

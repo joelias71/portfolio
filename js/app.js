@@ -1,6 +1,7 @@
 import Home from './components/home'
 import Portfolio from './components/portfolio'
 import Skills from './components/skills'
+import Contact from './components/contact'
 
 export default class App extends React.Component {
 
@@ -14,6 +15,7 @@ export default class App extends React.Component {
                 <Home />
                 <Skills />
                 <Portfolio />
+                <Contact />
             </div>
         )
     }
