@@ -21,10 +21,17 @@
     --color-yellow: #FFC552;
     --color-yellow-light: #ffed4b;
     --color-yellow-btn: #ffe593;
+
     --color-red: #F65058FF;
     --color-yellow2: #FBDE44FF;
     --color-navy: #28334AFF;
-    --color-black: #28334AFF;    ;
+    --color-black: #28334AFF;
+    
+    --color-kerem-green: #b3ebf2;
+    --color-kerem-white: rgb(221,220,218);
+    --color-kerem-gray: #aaa9a3;
+    --color-kerem-black: rgb(50,50,46);
+
     --primary-color: var(--color-red);
     --secondary-color: var(--color-yellow2);
     --third-color: var(--color-navy);
@@ -60,10 +67,10 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 .css-typing p:nth-child(1) {
-    width: 6em;
+    width: 3em;
     font-size: 2.5em;
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end);
+    -webkit-animation: type 1s steps(40, end);
+    animation: type 1s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -75,8 +82,8 @@ h1, h2, h3, h4, h5 {
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -85,10 +92,10 @@ h1, h2, h3, h4, h5 {
     width: 15em;
     font-size: 1.5em;
     opacity: 0;
-    -webkit-animation: type3 1s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 1s steps(20, end), blink .5s step-end infinite alternate;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    -webkit-animation: type3 1.5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 1.5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }

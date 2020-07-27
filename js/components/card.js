@@ -22,7 +22,7 @@ export default class Card extends React.Component {
                     </div>
                     <div className="flip-card-back">
                         <p>{this.props.description}</p>
-                        <Button text="View Source" href={this.props.linkRepo} download={false} />
+                        <Button text="View Source Code" href={this.props.linkRepo} download={false} />
                     </div>
                 </div>
             </div>

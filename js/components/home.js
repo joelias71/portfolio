@@ -8,7 +8,7 @@ export default class Home extends React.Component {
                 <Nav />
                 <div className="container">
                     <div className="css-typing">
-                        <p>Welcome</p>
+                        <p>Hello .</p>
                         <p>I'm Jorge Elias</p>
                         <p>Fullstack software engineer</p>
                     </div>
