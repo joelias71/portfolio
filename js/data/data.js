@@ -1,13 +1,13 @@
 export const data = [{
     id:6,
-    icon: 'fa fa-landmark',
+    icon: 'fa fa-balance-scale',
     title: 'Financial Quarter',
     linkRepo: 'https://github.com/joelias71/react-financial-quarter',
     stack: ['React','Typescript','Express','GraphQL'],
     description: 'React application using GraphQL and Typescript'
 },{
     id:5,
-    icon: 'fa fa-newspaper',
+    icon: 'fa fa-rss',
     title: 'News Application',
     linkRepo: 'https://github.com/joelias71/react-newsfeed',
     stack: ['React','Redux','Redux-Thunk'],

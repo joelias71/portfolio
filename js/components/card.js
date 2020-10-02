@@ -17,7 +17,7 @@ export default class Card extends React.Component {
                             <p>{this.props.title}</p>
                         </div>
                         <ul>
-                            {this.props.stack.map(skill => <li key>{skill}</li>)}
+                            {this.props.stack.map(skill => <li key={skill}>{skill}</li>)}
                         </ul>
                     </div>
                     <div className="flip-card-back">
