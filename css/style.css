@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5 {
 .home {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(110deg, var(--primary-color) 60%, var(--secondary-color) 60%);
     /*background-color: var(--primary-color);*/
     padding-top: 2rem;
