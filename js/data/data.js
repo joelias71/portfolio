@@ -1,4 +1,18 @@
 export const data = [{
+    id:6,
+    icon: 'fa fa-landmark',
+    title: 'Financial Quarter',
+    linkRepo: 'https://github.com/joelias71/react-financial-quarter',
+    stack: ['React','Typescript','Express','GraphQL'],
+    description: 'React application using GraphQL and Typescript'
+},{
+    id:5,
+    icon: 'fa fa-newspaper',
+    title: 'News Application',
+    linkRepo: 'https://github.com/joelias71/react-newsfeed',
+    stack: ['React','Redux','Redux-Thunk'],
+    description: 'React application using Readux Redux with Thunk'
+},{
     id:4,
     icon: 'fa fa-bed',
     title: 'Search Hotel',
